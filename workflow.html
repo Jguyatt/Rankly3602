@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rankly360 - Our Services</title>
+    <meta name="description" content="Discover Rankly360's comprehensive local SEO and Google Business Profile optimization services." />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: #18181b;
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #ffffff, #a0a0a0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#18181b] text-gray-100">
+    <!-- Header Bar -->
+    <header class="w-full bg-gradient-to-r from-[#232323] via-[#23233b] to-[#18181b] flex items-center justify-between px-8 py-4 shadow-lg backdrop-blur-md bg-opacity-80">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <!-- Logo SVG removed -->
+        <span class="text-2xl font-extrabold text-white tracking-wide">Rankly360</span>
+      </div>
+      <!-- Navigation -->
+      <nav class="flex items-center gap-6">
+        <a href="landing.html" class="text-gray-200 font-medium hover:text-cyan-400 transition">Home</a>
+        <a href="workflow.html" class="text-gray-200 font-medium hover:text-cyan-400 transition border-b-2 border-cyan-400">Services</a>
+        <a href="how-it-works.html" class="text-gray-200 font-medium hover:text-cyan-400 transition">How It Works</a>
+        <a href="faq.html" class="text-gray-200 font-medium hover:text-cyan-400 transition">FAQ</a>
+        <a href="book.html" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-5 py-2 rounded-md shadow-lg hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-transform duration-300">Book A Discovery Call!</a>
+      </nav>
+    </header>
+
+    <!-- Sticky CTA Bar -->
+    <div class="sticky top-0 z-30 w-full bg-gradient-to-r from-cyan-700 to-blue-800 text-white py-3 px-4 shadow-lg flex justify-center items-center gap-4 animate-fadeInUp">
+      <span class="font-bold text-lg">Ready to grow your business with Google Booster Kit?</span>
+      <a href="book.html" class="bg-white text-cyan-700 font-bold px-6 py-2 rounded-lg shadow hover:bg-cyan-100 transition">Book Your Free Consultation</a>
+    </div>
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 bg-gradient-to-b from-[#232323] to-[#18181b]">
+      <div class="max-w-6xl mx-auto text-center animate-fadeInUp">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 gradient-text">Google Booster Kit Services</h1>
+        <p class="text-xl text-cyan-100 mb-12 max-w-3xl mx-auto">Everything you need to dominate local search and grow your business, delivered by the experts at <span class="font-bold text-white">Rankly360</span>.</p>
+      </div>
+    </section>
+
+    <!-- Interactive Services Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Service Card Template -->
+        <div class="service-card bg-gradient-to-br from-[#232323] via-[#23233b] to-[#18181b] rounded-2xl p-10 shadow-2xl border border-cyan-700/30 hover:border-cyan-400 transition-all glassmorphism flex flex-col items-center text-center animate-fadeInUp cursor-pointer group" onclick="openModal('gmb')">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 border-2 border-cyan-400 mb-6 animate-pulse">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m9-4V6a4 4 0 00-8 0v4m12 0a4 4 0 01-8 0m8 0a4 4 0 01-8 0"></path></svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-2">Google Business Profile Optimization</h2>
+          <p class="text-cyan-100 mb-4">We fully optimize your Google Business Profile to improve local visibility and map rankings.</p>
+          <button class="mt-auto bg-cyan-500 text-white font-bold px-6 py-2 rounded-lg shadow hover:bg-cyan-600 transition group-hover:scale-105">Learn More</button>
+        </div>
+        <div class="service-card bg-gradient-to-br from-[#232323] via-[#23233b] to-[#18181b] rounded-2xl p-10 shadow-2xl border border-cyan-700/30 hover:border-cyan-400 transition-all glassmorphism flex flex-col items-center text-center animate-fadeInUp delay-100 cursor-pointer group" onclick="openModal('citations')">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 border-2 border-blue-400 mb-6 animate-pulse">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v4a1 1 0 001 1h3m10-5v4a1 1 0 01-1 1h-3m-4 4h6m2 0a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2h2"></path></svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-2">Citation Building & Cleanup</h2>
+          <p class="text-cyan-100 mb-4">Your business is submitted to 50+ authoritative directories with full NAP consistency checks and duplicate cleanup.</p>
+          <button class="mt-auto bg-cyan-500 text-white font-bold px-6 py-2 rounded-lg shadow hover:bg-cyan-600 transition group-hover:scale-105">Learn More</button>
+        </div>
+        <div class="service-card bg-gradient-to-br from-[#232323] via-[#23233b] to-[#18181b] rounded-2xl p-10 shadow-2xl border border-cyan-700/30 hover:border-cyan-400 transition-all glassmorphism flex flex-col items-center text-center animate-fadeInUp delay-200 cursor-pointer group" onclick="openModal('reviews')">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 border-2 border-yellow-400 mb-6 animate-pulse">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4 4 4-4m0-5V3m-8 9v6a2 2 0 002 2h8a2 2 0 002-2v-6"></path></svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-2">Automated Review Generation</h2>
+          <p class="text-cyan-100 mb-4">Boost your reputation with automated review requests and management tools.</p>
+          <button class="mt-auto bg-cyan-500 text-white font-bold px-6 py-2 rounded-lg shadow hover:bg-cyan-600 transition group-hover:scale-105">Learn More</button>
+        </div>
+        <div class="service-card bg-gradient-to-br from-[#232323] via-[#23233b] to-[#18181b] rounded-2xl p-10 shadow-2xl border border-cyan-700/30 hover:border-cyan-400 transition-all glassmorphism flex flex-col items-center text-center animate-fadeInUp delay-300 cursor-pointer group" onclick="openModal('posting')">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 border-2 border-purple-400 mb-6 animate-pulse">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17a4 4 0 004-4V5a4 4 0 00-8 0v8a4 4 0 004 4zm0 0v2a2 2 0 002 2h2a2 2 0 002-2v-2"></path></svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-2">Weekly Google Posts</h2>
+          <p class="text-cyan-100 mb-4">Keep your profile active and engaging with fresh, relevant content every week.</p>
+          <button class="mt-auto bg-cyan-500 text-white font-bold px-6 py-2 rounded-lg shadow hover:bg-cyan-600 transition group-hover:scale-105">Learn More</button>
+        </div>
+        <div class="service-card bg-gradient-to-br from-[#232323] via-[#23233b] to-[#18181b] rounded-2xl p-10 shadow-2xl border border-cyan-700/30 hover:border-cyan-400 transition-all glassmorphism flex flex-col items-center text-center animate-fadeInUp delay-400 cursor-pointer group" onclick="openModal('reporting')">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 border-2 border-green-400 mb-6 animate-pulse">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m4 4h-1v-4h-1m-4 4h-1v-4h-1"></path></svg>
+          </div>
+          <h2 class="text-2xl font-bold text-white mb-2">Local Rank Tracking & Reporting</h2>
+          <p class="text-cyan-100 mb-4">Monitor your rankings and results with live dashboards and detailed monthly reports.</p>
+          <button class="mt-auto bg-cyan-500 text-white font-bold px-6 py-2 rounded-lg shadow hover:bg-cyan-600 transition group-hover:scale-105">Learn More</button>
+        </div>
+      </div>
+      <!-- Service Modals -->
+      <div id="service-modal-bg" class="fixed inset-0 bg-black/70 z-40 hidden items-center justify-center"></div>
+      <div id="service-modal" class="fixed left-1/2 top-1/2 z-50 bg-[#23233b] rounded-2xl shadow-2xl border border-cyan-700/40 p-8 max-w-lg w-full text-white text-left transform -translate-x-1/2 -translate-y-1/2 hidden">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-cyan-400 hover:text-white text-2xl">&times;</button>
+        <div id="modal-content"></div>
+      </div>
+      <script>
+        const modalBg = document.getElementById('service-modal-bg');
+        const modal = document.getElementById('service-modal');
+        const modalContent = document.getElementById('modal-content');
+        function openModal(service) {
+          let content = '';
+          if (service === 'gmb') {
+            content = `<h2 class='text-2xl font-bold mb-2'>Google Business Profile Optimization</h2><p class='mb-4 text-cyan-100'>We claim, verify, and fully optimize your Google Business Profile for maximum visibility. This includes keyword-rich descriptions, category selection, geo-tagged images, and more.</p><ul class='list-disc list-inside text-cyan-200 space-y-2'><li>Profile setup & verification</li><li>Keyword optimization</li><li>Geo-tagged images</li><li>Category & service selection</li><li>Ongoing updates</li></ul>`;
+          } else if (service === 'citations') {
+            content = `<h2 class='text-2xl font-bold mb-2'>Citation Building & Cleanup</h2><p class='mb-4 text-cyan-100'>We submit your business to 50+ authoritative directories, ensure NAP consistency, and clean up duplicates or incorrect listings.</p><ul class='list-disc list-inside text-cyan-200 space-y-2'><li>Directory submissions</li><li>NAP consistency checks</li><li>Duplicate cleanup</li><li>Ongoing monitoring</li></ul>`;
+          } else if (service === 'reviews') {
+            content = `<h2 class='text-2xl font-bold mb-2'>Automated Review Generation</h2><p class='mb-4 text-cyan-100'>We help you generate more 5-star reviews with automated requests, reminders, and review management tools.</p><ul class='list-disc list-inside text-cyan-200 space-y-2'><li>Automated review requests</li><li>Review reminders</li><li>Reputation management</li></ul>`;
+          } else if (service === 'posting') {
+            content = `<h2 class='text-2xl font-bold mb-2'>Weekly Google Posts</h2><p class='mb-4 text-cyan-100'>We create and publish engaging posts on your Google Business Profile every week to keep your profile active and relevant.</p><ul class='list-disc list-inside text-cyan-200 space-y-2'><li>Weekly post creation</li><li>Content strategy</li><li>Promotion of offers/events</li></ul>`;
+          } else if (service === 'reporting') {
+            content = `<h2 class='text-2xl font-bold mb-2'>Local Rank Tracking & Reporting</h2><p class='mb-4 text-cyan-100'>Track your local keyword rankings and see detailed monthly reports on your progress and ROI.</p><ul class='list-disc list-inside text-cyan-200 space-y-2'><li>Live dashboard access</li><li>Monthly performance reports</li><li>Keyword tracking</li></ul>`;
+          }
+          modalContent.innerHTML = content;
+          modalBg.classList.remove('hidden');
+          modal.classList.remove('hidden');
+          modalBg.classList.add('flex');
+        }
+        function closeModal() {
+          modalBg.classList.add('hidden');
+          modal.classList.add('hidden');
+          modalBg.classList.remove('flex');
+        }
+      </script>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-6xl mx-auto text-center animate-fadeInUp glassmorphism shadow-2xl">
+        <h2 class="text-3xl font-bold text-white mb-6">Ready to Transform Your Local Presence?</h2>
+        <p class="text-cyan-100 mb-8 max-w-2xl mx-auto">Join hundreds of businesses that have already seen remarkable growth in their local market visibility and lead generation.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="landing.html" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg text-lg hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-transform duration-300 border border-cyan-400">← Back to Home</a>
+          <a href="book.html" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg text-lg hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-transform duration-300 border border-cyan-400">Book Your Free Consultation</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html> 

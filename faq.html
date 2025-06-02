@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rankly360 - Frequently Asked Questions</title>
+    <meta name="description" content="Get answers to common questions about our GMB optimization services." />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: #18181b;
+      }
+      .gradient-text {
+        background: linear-gradient(45deg, #ffffff, #a0a0a0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .faq-item {
+        transition: all 0.3s ease-in-out;
+      }
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+      }
+      .faq-item.active .faq-content {
+        max-height: 500px;
+      }
+      .faq-item.active .rotate-icon {
+        transform: rotate(180deg);
+      }
+      .rotate-icon {
+        transition: transform 0.3s ease-in-out;
+      }
+      /* Removed drop-shadow-glow and animate-spin-slow for a cleaner look */
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#18181b] text-gray-100">
+    <!-- Header Bar -->
+    <header class="w-full bg-gradient-to-r from-[#232323] via-[#23233b] to-[#18181b] flex items-center justify-between px-8 py-4 shadow-lg backdrop-blur-md bg-opacity-80">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <!-- Logo SVG removed -->
+        <span class="text-2xl font-extrabold text-white tracking-wide">Rankly360</span>
+      </div>
+      <!-- Navigation -->
+      <nav class="flex items-center gap-6">
+        <a href="landing.html" class="text-gray-200 font-medium hover:text-cyan-400 transition">Home</a>
+        <a href="workflow.html" class="text-gray-200 font-medium hover:text-cyan-400 transition">Services</a>
+        <a href="how-it-works.html" class="text-gray-200 font-medium hover:text-cyan-400 transition">How It Works</a>
+        <a href="faq.html" class="text-gray-200 font-medium hover:text-cyan-400 transition border-b-2 border-cyan-400">FAQ</a>
+        <a href="book.html" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-5 py-2 rounded-md shadow-lg hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-transform duration-300">Book A Discovery Call!</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 bg-gradient-to-b from-[#232323] to-[#18181b]">
+      <div class="max-w-6xl mx-auto text-center animate-fadeInUp">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 gradient-text drop-shadow-glow">Frequently Asked Questions</h1>
+        <p class="text-xl text-cyan-100 mb-12 max-w-3xl mx-auto">Everything you need to know about our GMB optimization services and how we can help your business grow.</p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto animate-fadeInUp">
+        <!-- FAQ Categories -->
+        <div class="flex flex-wrap gap-4 justify-center mb-12">
+          <button class="px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 transition-all shadow-lg drop-shadow-glow" onclick="filterFAQs('all')">All Questions</button>
+          <button class="px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 transition-all shadow-lg drop-shadow-glow" onclick="filterFAQs('service')">Services</button>
+          <button class="px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 transition-all shadow-lg drop-shadow-glow" onclick="filterFAQs('process')">Process</button>
+          <button class="px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 transition-all shadow-lg drop-shadow-glow" onclick="filterFAQs('results')">Results</button>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-4">
+          <!-- Service Questions -->
+          <div class="faq-item bg-[#232323] rounded-xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all" data-category="service">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold">What is GMB optimization and why do I need it?</span>
+              <svg class="w-6 h-6 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-4">
+              <p class="text-gray-300">Google My Business (GMB) optimization is the process of enhancing your business's online presence in Google Maps and local search results. It's crucial for local businesses because it helps you appear in front of potential customers when they search for services in your area. Our optimization services can significantly improve your visibility, increase customer engagement, and drive more leads to your business.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-[#232323] rounded-xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all" data-category="service">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold">What services are included in your GMB optimization package?</span>
+              <svg class="w-6 h-6 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-4">
+              <p class="text-gray-300">We offer a complete GMB optimization service that includes profile optimization, review management, and regular content updates to help your business rank higher in local search results.</p>
+            </div>
+          </div>
+
+          <!-- Process Questions -->
+          <div class="faq-item bg-[#232323] rounded-xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all" data-category="process">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold">How long does it take to see results?</span>
+              <svg class="w-6 h-6 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-4">
+              <p class="text-gray-300">While some improvements can be seen within the first month, significant results typically appear within 3-6 months. This timeline varies based on your industry, competition, and current online presence. We provide monthly reports to track progress and make necessary adjustments.</p>
+            </div>
+          </div>
+
+          <!-- Results Questions -->
+          <div class="faq-item bg-[#232323] rounded-xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all" data-category="results">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold">What kind of results can I expect?</span>
+              <svg class="w-6 h-6 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-4">
+              <p class="text-gray-300">Our clients typically see a 30-50% increase in visibility, 40-60% more customer reviews, and 25-45% growth in leads and calls. We provide detailed analytics and reporting to track these improvements and ensure you're getting the best possible return on your investment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-[#232323] rounded-xl overflow-hidden border border-gray-800 hover:border-gray-700 transition-all" data-category="process">
+            <button class="w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+              <span class="text-lg font-semibold">Do I need to provide any information or access?</span>
+              <svg class="w-6 h-6 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-4">
+              <p class="text-gray-300">Yes, we'll need access to your Google My Business account and some basic information about your business, including photos, services, and business hours. We'll guide you through the process and handle most of the work for you.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-20 text-center animate-fadeInUp glassmorphism shadow-2xl">
+          <h2 class="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
+          <p class="text-cyan-100 mb-8 max-w-2xl mx-auto">Join hundreds of businesses that have already seen remarkable growth in their local market visibility and lead generation.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="landing.html" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg text-lg hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-transform duration-300 border border-cyan-400">← Back to Home</a>
+            <a href="book.html" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg text-lg hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition-transform duration-300 border border-cyan-400">Book Your Free Consultation</a>
+          </div>
+        </div>
+      </div>
+      <style>
+        .glassmorphism { background: rgba(30,40,60,0.7); backdrop-filter: blur(8px); }
+        @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(40px); } 100% { opacity: 1; transform: translateY(0); } }
+        .animate-fadeInUp { animation: fadeInUp 1.2s cubic-bezier(.4,2,.6,1) both; }
+        .delay-100 { animation-delay: 0.15s; }
+        .delay-200 { animation-delay: 0.3s; }
+        .delay-300 { animation-delay: 0.45s; }
+        .animate-pulse { animation: pulseGlow 2.5s infinite alternate; }
+        @keyframes pulseGlow { 0% { opacity: 0.5; } 100% { opacity: 1; } }
+      </style>
+    </section>
+
+    <!-- JavaScript for FAQ functionality -->
+    <script>
+      function toggleFAQ(button) {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle('active');
+      }
+
+      function filterFAQs(category) {
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+          if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+    </script>
+  </body>
+</html> 
